@@ -18,7 +18,7 @@ from tensorflow.keras.models import load_model
 
 nltk.download('punkt', quiet=True)
 nltk.download('wordnet', quiet=True)
-nltk.download('punkt', quiet=True)
+nltk.download('omw-1.4', quiet=True)
 
 class IAssistant(metaclass=ABCMeta):
 
