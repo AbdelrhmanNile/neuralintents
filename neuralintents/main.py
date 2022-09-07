@@ -18,6 +18,7 @@ from tensorflow.keras.models import load_model
 
 nltk.download('punkt', quiet=True)
 nltk.download('wordnet', quiet=True)
+nltk.download('punkt', quiet=True)
 
 class IAssistant(metaclass=ABCMeta):
 
@@ -182,6 +183,6 @@ class GenericAssistant(IAssistant):
         ints = self._predict_class(message)
 
         if ints[0]['intent'] in self.intent_methods.keys():
-            self.intent_methods[ints[0]['intent']]()
+            return self.intent_methods[ints[0]['intent']](message)
         else:
             return self._get_response(ints, self.intents)
