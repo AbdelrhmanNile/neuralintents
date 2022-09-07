@@ -13,7 +13,7 @@ LONG_DESCRIPTION = 'Simple interface for working with intents and chatbots.'
 
 # Setting up
 setup(
-    name="neuralintents",
+    name="xneuralintents",
     version=VERSION,
     author="NeuralNine (Florian Dedov)",
     author_email="<mail@neuralnine.com>",
